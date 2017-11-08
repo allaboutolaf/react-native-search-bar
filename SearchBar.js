@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import createClass from "create-react-class";
 import { NativeModules, requireNativeComponent } from "react-native";
 
 const RNSearchBar = requireNativeComponent("RNSearchBar", null);
