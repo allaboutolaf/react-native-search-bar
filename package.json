@@ -8,6 +8,9 @@
     "react-native",
     "ios"
   ],
+  "scripts": {
+    "prettier": "prettier --write *.js"
+  },
   "repository": "https://github.com/umhan35/react-native-search-bar",
   "homepage": "https://github.com/umhan35/react-native-search-bar",
   "main": "SearchBar.js",
@@ -19,5 +22,8 @@
   "peerDependencies": {
     "react": ">= 15.0.0",
     "react-native": "^0.45.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.8.1"
   }
 }
