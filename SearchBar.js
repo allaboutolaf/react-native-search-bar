@@ -1,16 +1,11 @@
-var NativeModules, PropTypes, RNSearchBar, React, ReactNative, SearchBar;
+import React from 'react';
+import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
+import {NativeModules, requireNativeComponent} from 'react-native';
 
-React = require('react');
+const RNSearchBar = requireNativeComponent('RNSearchBar', null);
 
-ReactNative = require('react-native');
-
-RNSearchBar = ReactNative.requireNativeComponent('RNSearchBar', null);
-
-PropTypes = React.PropTypes;
-
-NativeModules = ReactNative.NativeModules;
-
-SearchBar = React.createClass({
+const SearchBar = createClass({
   propTypes: {
     placeholder: PropTypes.string,
     text: PropTypes.string,
@@ -73,4 +68,4 @@ SearchBar = React.createClass({
   }
 });
 
-module.exports = SearchBar;
+export default SearchBar
