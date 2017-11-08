@@ -32,7 +32,7 @@ class SearchBar extends React.Component {
     editable: true
   };
 
-  _onChange(e) {
+  _onChange = e => {
     const { onChange, onChangeText } = this.props;
     if (typeof onChange === "function") {
       onChange(e);
@@ -40,7 +40,7 @@ class SearchBar extends React.Component {
     if (typeof onChangeText === "function") {
       onChangeText(e.nativeEvent.text);
     }
-  }
+  };
 
   _onPress = () => {
     const { onSearchButtonPress, onCancelButtonPress } = this.props;
